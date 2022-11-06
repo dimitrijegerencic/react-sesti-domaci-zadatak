@@ -1,0 +1,28 @@
+.container{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+  padding-bottom: 100px;
+
+  @media only screen and (max-width: 1440px){
+    flex-direction: column;
+  }
+
+  .a1{
+    @media only screen and (max-width: 1440px){
+      width: auto;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .a2{
+    @media only screen and (max-width: 1440px){
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+  }
+}

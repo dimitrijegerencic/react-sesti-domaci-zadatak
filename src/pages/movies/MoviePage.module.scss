@@ -1,0 +1,39 @@
+.container {
+  margin-top: 70px;
+  padding-bottom: 100px;
+
+  .title {
+    h1 {
+      font-family: "Ubuntu-Bold", sans-serif;
+      font-size: 60px;
+      text-align: center;
+      color: var(--primary-color);
+
+      @media only screen and (max-width: 1440px) {
+        font-size: 40px;
+      }
+
+      @media only screen and (max-width: 826px) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .movies {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+
+    @media only screen and (max-width: 1460px) {
+      grid-template-columns: auto auto;
+    }
+
+    @media only screen and (max-width: 950px) {
+      grid-template-columns: auto;
+    }
+
+  }
+}

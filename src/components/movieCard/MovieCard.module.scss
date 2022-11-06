@@ -1,0 +1,85 @@
+.movie-container{
+  width: 450px;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0 4px 16px, rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+  @media only screen and (max-width: 950px){
+    grid-template-columns: auto;
+    width: 800px;
+  }
+
+  @media only screen and (max-width: 830px){
+    grid-template-columns: auto;
+    width: 450px;
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 650px){
+    overflow:auto;
+  }
+
+  .poster{
+    @media only screen and (max-width: 830px){
+      width: auto;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .movie-info{
+    width: 70%;
+    text-align: center;
+    margin-top: 50px;
+    padding-right: 15px;
+
+    @media only screen and (max-width: 830px){
+      width: auto;
+      margin: 0;
+      padding-left: 30px;
+    }
+
+    h3{
+      font-family: "Ubuntu-Bold", sans-serif;
+      font-size: 20px;
+      color: var(--primary-color);
+    }
+
+    .actors{
+      font-family: "Ubuntu-Regular", sans-serif;
+      span{
+        font-family: "Ubuntu-Bold", sans-serif;
+        color: var(--primary-color);
+      }
+    }
+
+    .three-part-info{
+      font-family: "Ubuntu-Regular", sans-serif;
+      gap: 10px;
+    }
+
+    .three-part-info, .grade-more {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .grade-more{
+      gap: 30px;
+      margin-top:30px;
+
+      @media only screen and (max-width: 830px){
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  img{
+    width: 220px;
+    height: 300px;
+    padding: 20px;
+  }
+
+}
+

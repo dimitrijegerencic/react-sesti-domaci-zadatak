@@ -1,0 +1,43 @@
+.main{
+
+  .container{
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    @media only screen and (max-width: 1440px){
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .user-details{
+      width: 50%;
+      padding-left: 40px;
+
+      @media only screen and (max-width: 1440px){
+        padding-left: 0px;
+        width: auto;
+      }
+
+    }
+
+    .movie-watchers{
+      width: 50%;
+
+      @media only screen and (max-width: 1440px){
+        padding-left: 0px;
+        width: auto;
+      }
+
+      @media only screen and (max-width: 650px){
+          width: auto;
+      }
+
+    }
+  }
+
+}
